@@ -1,5 +1,8 @@
 == README
 
+Hi, 
+this is Nicole! I'm just fidling about at this point :) Excited about what is coming next! 
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
