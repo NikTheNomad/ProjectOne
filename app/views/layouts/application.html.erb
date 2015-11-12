@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="UTF-8" />
 <head>
   <title>ProjectOne</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
+
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+	<header>
+    <div class="menuBar">
+      <div class="menuBarText">
+        <p><a href="#NikTheNomad" class="navscroll">Nik The Nomad</a></p>
+        <ul>
+          <li><a href="#aboutme" class="navscroll">ABOUT ME</a></li>
+          <li><a href="#contact" class="navscroll">CONTACT ME</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+<body>    
+	<p>Pop-up post-ironic ennui, stumptown chicharrones echo park brunch quinoa godard vinyl helvetica brooklyn. Meh mustache godard offal street art pabst. Austin cornhole crucifix four loko fap organic, meggings tattooed pinterest tofu etsy. Retro chambray cornhole four loko yuccie. Kinfolk fingerstache dreamcatcher chillwave gluten-free seitan. Tilde taxidermy farm-to-table literally, tousled thundercats YOLO chartreuse plaid lomo knausgaard cardigan bushwick aesthetic green juice. Tattooed bicycle rights single-origin coffee, kinfolk retro neutra bushwick flannel intelligentsia tilde organic 90's.
+
+Fanny pack freegan thundercats jean shorts selvage paleo gluten-free knausgaard cornhole pug whatever, tofu everyday carry venmo hella. Deep v PBR&B skateboard, bespoke vegan flannel neutra fixie shoreditch chicharrones try-hard craft beer thundercats lo-fi. Fashion axe asymmetrical schlitz, taxidermy swag chartreuse PBR&B salvia. Austin deep v blog chartreuse, offal 3 wolf moon selvage pork belly kale chips cronut shabby chic messenger bag tote bag fap PBR&B. Tilde tote bag wolf biodiesel normcore chia. Chambray direct trade artisan, irony semiotics retro meditation aesthetic chillwave quinoa normcore marfa asymmetrical art party PBR&B. Food truck hammock vegan butcher, PBR&B irony cronut synth hella gentrify dreamcatcher roof party brunch salvia.
+</p>
+</body>
+
+<hr>
+
+    <footer>
+      <p>2015 © NikTheNomad</p>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+
+
+		
 
 <%= yield %>
 
-</body>
+
 </html>
