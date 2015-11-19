@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
+/*@import "bootstrap-sprockets";
+@import "bootstrap";*/
+
 /**{box-sizing; border-box;}*/
 
 /*nav {
@@ -85,14 +88,19 @@ html, body {
 }*/
 
 /*.copy {
-  clear: both;
+  
   background: black;
   color: white;
-  padding: 0px 20px;
-  position: absolute;
+  
+}*/
+body {
+  position: relative !important;
 }
 
 footer {
-  background-color: #dddddd;
+  clear: both;
+  background-color: black;
   color: white;
-}*/
+  padding: 2px 20px;
+  position: absolute;
+}
