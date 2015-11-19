@@ -1,59 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8"/>
-<head>
-  <title>ProjectOne</title>
+  <!DOCTYPE html>
+  <html lang="en">
+  <meta charset="UTF-8"/>
+  <head>
+    <title>NikTheNomad Bikes</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= csrf_meta_tags %>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
 
-</head>
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
-	<header>
-    <div class="menuBar">
-      <div class="menuBarText">
-        <p><a href="../index.html.erb" class="navscroll">Nicole Baltussen</a></p>
-        <ul>
-          <li><a href="#aboutme" class="navscroll">ABOUT ME</a></li>
-          <li><a href="#contact" class="navscroll">CONTACT ME</a></li>
-        </ul>
+  <nav class="navbar navbar-inverse" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">NikTheNomad Bikes</a>
       </div>
-    </div>
-  </header>
-<!-- 
-<body>    
-<div class="page-wrap">
-  
-  Content!
+     
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="/products">Products</a></li>
+          <li><a href="/orders">Orders</a></li> -->
+          <li><a href="/static_pages/about">About</a></li>
+          <li><a href="/static_pages/contact">Contact</a></li>
+        </ul>
+       <!--  <ul class="nav navbar-nav pull-right">
+          <li id="login">
+          <a href="/users/sign_in">Login</a>
+        </li>
+        </ul>
+ -->    <div class="nav navbar-form navbar-left" role="search">
+            <form action="/products" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                <!--<label for="q">Search for</label> -->
+                <input type="text" name="q" id="q" />
+                <input type="submit" name="commit" value="Search" />
+            </form><!-- form_tag -->
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- <div class="page-wrap"> -->
+    
+        <!-- content -->
+  <!-- </div> -->
+
+  </body> -->
+
+  <hr>
+
+  <footer class="site-footer">
+    <p>2015 © Utrecht Bikes</p>
+  </footer>
+
+
       
-</div>
-</body> -->
-
-<hr>
-
-<footer class="site-footer">
-  <p>2015 © NikTheNomad</p>
-</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+      
 
 
-    
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-    
+  		
+
+  <%= yield %>
 
 
-		
-
-<%= yield %>
-
-
-</html>
+  </html>

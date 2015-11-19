@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
-.menuBar {
+*{box-sizing; border-box;}
+
+nav {
   background-color: #FFFFFF;
   color: #595959;
   height: 60px;
@@ -23,7 +25,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+/*
 .menuBar p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -33,13 +35,13 @@
   font-size: 1.875em;
   margin-top: 15px;
   margin-left: 7.586206896551724%;
-}
+}*/
 
-.menuBar ul {
+.navbar ul {
   margin-right: 4.1379310344827586%;
 }
 
-.menuBar li {
+.navbar li {
   font-family: Lato;
   font-weight: 300;
   display: inline;
@@ -50,25 +52,47 @@
   top: 20px;
 }
 
+/*#navbar {
+  width: auto;
+}*/
+
+.nav a:hover {
+  color: #ffbb4a !important; 
+  text-decoration: none;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
 * {
   margin: 0;
 }
+
 html, body {
   height: 100%;
 }
-.page-wrap {
+
+/*.page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px; 
+ /* margin-bottom: -142px; 
 }
-.page-wrap:after {
+/**/
+/*.page-wrap:after {
   content: "";
   display: block;
-}
-.site-footer, .page-wrap:after {
-  height: 142px; 
-}
-.site-footer {
+}*/
+
+.copy {
+  clear: both;
   background: black;
+  color: white;
+  padding: 0px 20px;
+  position: absolute;
+}
+
+footer {
+  background-color: #dddddd;
   color: white;
 }
