@@ -2,9 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
-*{box-sizing; border-box;}
+/**{box-sizing; border-box;}*/
 
-nav {
+/*nav {
   background-color: #FFFFFF;
   color: #595959;
   height: 60px;
@@ -19,7 +19,7 @@ nav {
   -webkit-transform: translateZ(0);
   z-index: 10000;
   position: absolute;
-}
+}*/
 
 /*.menuBarText {
   margin-left: auto;
@@ -37,7 +37,7 @@ nav {
   margin-left: 7.586206896551724%;
 }*/
 
-.navbar ul {
+/*.navbar ul {
   margin-right: 4.1379310344827586%;
 }
 
@@ -50,12 +50,12 @@ nav {
   float: right;
   margin-right: 3.4482758620689655%;
   top: 20px;
-}
+}*/
 
 /*#navbar {
   width: auto;
 }*/
-
+/*
 .nav a:hover {
   color: #ffbb4a !important; 
   text-decoration: none;
@@ -63,15 +63,15 @@ nav {
   letter-spacing: 0.05em; 
   transition: color 600ms;
   -webkit-transition: color 600ms;
-}
+}*/
 
-* {
+/** {
   margin: 0;
 }
 
 html, body {
   height: 100%;
-}
+}*/
 
 /*.page-wrap {
   min-height: 100%;
@@ -84,7 +84,7 @@ html, body {
   display: block;
 }*/
 
-.copy {
+/*.copy {
   clear: both;
   background: black;
   color: white;
@@ -95,4 +95,4 @@ html, body {
 footer {
   background-color: #dddddd;
   color: white;
-}
+}*/
