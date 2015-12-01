@@ -2,15 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
-/*@import "bootstrap-sprockets";
-@import "bootstrap";*/
+body {
+  position: relative !important;
+  max-width: 100%;
+}
 
-/**{box-sizing; border-box;}*/
-
-/*nav {
-  background-color: #FFFFFF;
+nav {
+  background-color: black;
   color: #595959;
-  height: 60px;
+  height: 30px;
   box-shadow: 0px 0.5px 1px #888888;
   top: 0;
   width: 100%;
@@ -22,79 +22,6 @@
   -webkit-transform: translateZ(0);
   z-index: 10000;
   position: absolute;
-}*/
-
-/*.menuBarText {
-  margin-left: auto;
-  margin-right: auto;
-}*/
-/*
-.menuBar p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  display: inline;
-  position: relative;
-  float: left;
-  font-size: 1.875em;
-  margin-top: 15px;
-  margin-left: 7.586206896551724%;
-}*/
-
-/*.navbar ul {
-  margin-right: 4.1379310344827586%;
-}
-
-.navbar li {
-  font-family: Lato;
-  font-weight: 300;
-  display: inline;
-  font-size: 1em;
-  position: relative;
-  float: right;
-  margin-right: 3.4482758620689655%;
-  top: 20px;
-}*/
-
-/*#navbar {
-  width: auto;
-}*/
-/*
-.nav a:hover {
-  color: #ffbb4a !important; 
-  text-decoration: none;
-  text-transform: uppercase; 
-  letter-spacing: 0.05em; 
-  transition: color 600ms;
-  -webkit-transition: color 600ms;
-}*/
-
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-/*.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
- /* margin-bottom: -142px; 
-}
-/**/
-/*.page-wrap:after {
-  content: "";
-  display: block;
-}*/
-
-/*.copy {
-  
-  background: black;
-  color: white;
-  
-}*/
-body {
-  position: relative !important;
 }
 
 footer {
@@ -104,3 +31,5 @@ footer {
   padding: 2px 20px;
   position: absolute;
 }
+
+/*css doesn't load? */

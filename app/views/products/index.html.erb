@@ -1,10 +1,57 @@
 <p id="notice"><%= notice %></p>
 
-<!-- <link rel="stylesheet" type="text/css/scss" href="products.scss"> -->
+<link rel="stylesheet" type="text/css/scss" href="products.scss">
 
-<h1>All our products</h1>
+<div class="container-fluid" id="productheader">
+  <div class="container-header">
+    <h1>All our products</h1>
+  </div>
+    
+  <div class="container-fluid">
+    <div class="row" id="productrow">
+      <div class="col-md-4 col-xs-6">
+        <div class="product-container">
+          <p>Outdoor Tents</p><br>
+          <p>Find your best outdoor tents right here!</p>
+            <div class="image">
+              <%= image_tag("tent.jpg") %> <img id="tent">
+            </div>
+            <div class="products-ref"> 
+              <p><a href="/products/show.html.erb">Show</a>
+                    <a href="/products/edit.html.erb">Edit</a>
+                    <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/2">Cancel</a></p>
+            </div>
+          <hr>
+          <div class="show-index-price">
+          <p> $98.00 and up</p>
+          </div>
+        </div>
+      </div>
 
-<table>
+      <div class="col-md-4 col-xs-6">
+        <div class="product-container">
+          <p>Hammocks</p><br>
+          <p>The best outdoor hammocks</p>
+            <div class="image">
+              <%= image_tag("hammock-1.jpeg") %> <img id="hammock">
+            </div>
+            <div class="products-ref">
+                <p><a href="/products/show.html.erb">Show</a>
+                  <a href="/products/edit.html.erb">Edit</a>
+                  <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/2">Cancel</a></p>
+            </div>
+          <hr>
+          <div class="show-index-price">
+            <p> From $50.00 and up</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- <end row> -->
+  </div> <!-- - end container> -->
+
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -28,7 +75,7 @@
        </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
 

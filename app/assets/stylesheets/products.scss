@@ -2,19 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
-h1 {
-	background-color: pink;
+#productheader {
+	text-align: center;
+	margin-top: 30px;
+	padding: 10px;
+	background-color: white;
+	font-family: helvetica, verdana, sans-serif;
 }
 
-thead th {
-	color: white;
-	background-color: black;
+.row {
+	width: 100%;
+	color: #0c1822;
+	background-color: #ecfefa;
 	display: inline-block;
 	padding-left: 10px;
+	margin: 10px;
+	border-left: 1px #0c1822; 
 }
 
-tbody td {
+.row a {
+	/*float: inherit;*/
+	color: #0c1822;
 	display: inline-block;
 	padding: 10px;
-	
 }
+
+.product-container p {
+	text-align: inherit;
+	display: inline-block;
+	position: relative;
+}
+
+img {
+
+}
+
+/*.hr {
+	width: 100%;
+	color: #0c1822;
+}*/
+
+/*
+padding etc
+hover
+image control
+float/clear
+*/
