@@ -8,6 +8,7 @@
   </div>
     
   <div class="container-fluid">
+    <% @products.each do |product| %>
     <div class="row" id="productrow">
       <div class="col-md-4 col-xs-6">
         <div class="product-container">
@@ -17,8 +18,10 @@
               <%= image_tag("tent.jpg") %> <img id="tent">
             </div>
             <div class="products-ref"> 
-              <p><a href="/products/show.html.erb">Show</a>
-                    <a href="/products/edit.html.erb">Edit</a>
+              <p><!-- <a href="/products/show.html.erb">Show</a> -->
+                <%= link_to 'Show', product %>
+                    <!-- <a href="/products/edit.html.erb">Edit</a> -->
+                <%= link_to 'Edit', edit_product_path(product) %>
                     <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/2">Cancel</a></p>
             </div>
           <hr>
@@ -36,8 +39,10 @@
               <%= image_tag("hammock-1.jpeg") %> <img id="hammock">
             </div>
             <div class="products-ref">
-                <p><a href="/products/show.html.erb">Show</a>
-                  <a href="/products/edit.html.erb">Edit</a>
+                <p><!-- <a href="/products/show.html.erb">Show</a> -->
+                  <%= link_to 'Show', product %>
+                  <!-- <a href="/products/edit.html.erb">Edit</a> -->
+                  <%= link_to 'Edit', edit_product_path(product) %>
                   <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/2">Cancel</a></p>
             </div>
           <hr>
@@ -51,32 +56,9 @@
 
 
 
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Color</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= product.color %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-       </tr>
-    <% end %>
-  </tbody>
-</table> -->
-
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+<% end %>
+
