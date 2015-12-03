@@ -15,8 +15,11 @@
         <%= csrf_meta_tags %>
 
         <link rel="stylesheet" type="text/css/scss" href="static_pages.scss">
-        <link rel="stylesheet" type="text/js" href="application.js">
-    
+        <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => true %> 
+
+        <link rel="javascripts" type="text/javascript" href="application.js">
+        <%= javascript_include_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
@@ -50,10 +53,7 @@
       </nav>
 
 </body> 
-     
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-     <!--  // <script type="text/javascript" src="application.js"></script> -->
-         
+                 
 
 </html>
       		
@@ -65,3 +65,5 @@
     <footer class="site-footer">
         <p><b> 2015 © NiktheNomad Gear </b></p>
     </footer>
+
+<=% end %>

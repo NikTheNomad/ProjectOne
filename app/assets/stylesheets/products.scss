@@ -2,45 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
-#productheader {
+/*#productheader {
 	text-align: center;
 	margin-top: 30px;
 	padding: 10px;
 	background-color: white;
 	font-family: helvetica, verdana, sans-serif;
-}
+}*/
 
 .row {
-	width: 100%;
+	max-width: 100%;
 	color: #0c1822;
 	background-color: #ecfefa;
 	display: inline-block;
 	padding-left: 10px;
 	margin: 10px;
 	border-left: 1px #0c1822; 
+	text-align: inherit;
 }
 
-.row a {
-	/*float: inherit;*/
-	color: #0c1822;
-	display: inline-block;
-	padding: 10px;
-}
-
+/*
 .product-container p {
 	text-align: inherit;
 	display: inline-block;
 	position: relative;
-}
+	/*border: 1px solid black;*/
 
-img {
 
-}
 
 /*.hr {
 	width: 100%;
 	color: #0c1822;
-}*/
+}
 
 /*
 padding etc

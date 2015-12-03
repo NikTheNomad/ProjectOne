@@ -5,6 +5,10 @@
 body {
   position: relative !important;
   max-width: 100%;
+  margin-top: 50px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: helvetica, verdana, sans-serif;
 }
 
 nav {
@@ -24,12 +28,32 @@ nav {
   position: absolute;
 }
 
+#contact ul {
+  display: inline;
+}
+
+/*==========Images==============*/
+#cave {
+  max-width: 100%;
+}
+
+/*#gear {
+  max-width: 100%;
+  border: 1px solid black;
+}*/
+
+/*#case {
+  max-width: 100%;
+}*/
+
 footer {
   clear: both;
   background-color: black;
   color: white;
   padding: 2px 20px;
   position: absolute;
+  width: 100%;
+  text-align: right;
 }
 
 /*css doesn't load? */
