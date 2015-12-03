@@ -14,5 +14,5 @@ class OrdersController < ApplicationController
 
   def destroy
   end
-render "products/form"
+
 end
