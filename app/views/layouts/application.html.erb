@@ -44,9 +44,13 @@
 
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/static_pages/about">About Us</a></li>
+<!--               <li><a href="/static_pages/about">About Us</a></li>
               <li><a href="/static_pages/contact">Contact Us</a></li>
-              <li><a href="/products">Our Products</a></li>
+              <li><a href="/products">Our Products</a></li> -->
+                <li><%= link_to 'Products', products_path %></li>
+                <!-- li><a href="#">Log in</a></li> -->
+                <li><%= link_to 'About', static_pages_about_path %></li>
+                <li><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
           </div>
         </div>

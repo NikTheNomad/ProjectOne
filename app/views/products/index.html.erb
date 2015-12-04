@@ -9,9 +9,8 @@
   </div>
     
   <div class="container-fluid">
-    <% @products.each do |product| %>
     <div class="row" id="productrow">
-      <div class="col-md-4 col-xs-6">
+      <div class="col-lg-4 col-md-4 col-xs-6">
         <div class="product-container">
           <p>Outdoor Tents</p><br>
           <p>Find your best outdoor tents right here!</p>
@@ -19,12 +18,12 @@
               <%= image_tag("tent.jpg") %> <img id="tent">
             </div>
             <div class="products-ref"> 
-              <p><!-- <a href="/products/show.html.erb">Show</a> -->
-                <%= link_to 'Show', product %>
-                    <!-- <a href="/products/edit.html.erb">Edit</a> -->
-                <%= link_to 'Edit', edit_product_path(product) %>
-                    <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-              </p>
+               <%= @products.each do |product| %>
+                <p><%= link_to 'Show', product %>
+                  <%= link_to 'Edit', edit_product_path(product) %>
+                  <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </p>
+                <% end -%>
             </div>
           <hr>
           <div class="show-index-price">
@@ -32,8 +31,8 @@
           </div>
         </div>
       </div>
-
-      <div class="col-md-4 col-xs-6">
+  
+      <div class="col-lg-4 col-md-4 col-xs-6">
         <div class="product-container">
           <p>Hammocks</p><br>
           <p>The best outdoor hammocks</p>
@@ -41,12 +40,13 @@
               <%= image_tag("hammock-1.jpeg") %> <img id="hammock">
             </div>
             <div class="products-ref">
+               <%= @products.each do |product| %>
                 <p><!-- <a href="/products/show.html.erb">Show</a> -->
-                  <%= link_to 'Show', product %>
-                  <!-- <a href="/products/edit.html.erb">Edit</a> -->
+                  <%= link_to 'Show', product %> 
                   <%= link_to 'Edit', edit_product_path(product) %>
                   <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
                 </p>
+                <% end -%>
             </div>
           <hr>
           <div class="show-index-price">
@@ -58,11 +58,10 @@
   </div> <!-- - end container> -->
 
 
-
 <br>
 
 <%= link_to 'New Product', new_product_path %>
 
-<% end %>
+
 
 
