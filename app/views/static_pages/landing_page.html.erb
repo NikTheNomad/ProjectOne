@@ -1,5 +1,12 @@
-<h2>Featured product:</h2>
+<h1>Welcome to Nik the Nomad's Travel Gear website!</h1>
+<h2>Here's a sneekpeak of one of our products:</h2>
+
+  <div class="image">
+    <%= image_tag("hammock-1.jpg") %> <img id="hammock">
+  </div>
+
 <%= @featured_product.name %>
 
 <br>
 <%= link_to 'New Product', new_product_path %>
+

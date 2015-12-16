@@ -1,14 +1,19 @@
+<div class="container" id="pagecontainer">
 <p id="notice"><%= notice %></p>
+<h2>Our Products</h2>
 
 <link rel="stylesheet" type="text/css" href="products.scss">
     <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => true %>
 
-<div class="container-fluid" id="productheader">
+
+<body>
+<!-- <div class="container-fluid" id="productheader">
   <div class="container-header">
     <h1>All our products</h1>
-  </div>
-    
-  <div class="container-fluid">
+  </div> -->
+  
+  
+   <div class="container-fluid">
     <div class="row" id="productrow">
       <div class="col-lg-4 col-md-4 col-xs-6">
         <div class="product-container">
@@ -18,18 +23,19 @@
               <%= image_tag("tent.jpg") %> <img id="tent">
             </div>
             <div class="products-ref"> 
-               <%= @products.each do |product| %>
+               <% @products.each do |product| %>
                 <p><%= link_to 'Show', product %>
                   <%= link_to 'Edit', edit_product_path(product) %>
                   <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
                 </p>
-                <% end -%>
+                <% end %>
             </div>
           <hr>
           <div class="show-index-price">
           <p> $98.00 and up</p>
           </div>
         </div>
+        <%= link_to 'New Product', new_product_path %>
       </div>
   
       <div class="col-lg-4 col-md-4 col-xs-6">
@@ -40,7 +46,7 @@
               <%= image_tag("hammock-1.jpeg") %> <img id="hammock">
             </div>
             <div class="products-ref">
-               <%= @products.each do |product| %>
+               <% @products.each do |product| %>
                 <p><!-- <a href="/products/show.html.erb">Show</a> -->
                   <%= link_to 'Show', product %> 
                   <%= link_to 'Edit', edit_product_path(product) %>
@@ -53,15 +59,13 @@
             <p> From $50.00 and up</p>
           </div>
         </div>
+        <%= link_to 'New Product', new_product_path %>
       </div>
     </div> <!-- <end row> -->
   </div> <!-- - end container> -->
 
 
 <br>
-
-<%= link_to 'New Product', new_product_path %>
-
-
-
+<!-- </div> --> <!-- <-end container -->
+</body>
 
