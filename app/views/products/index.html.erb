@@ -24,12 +24,12 @@
               <%= image_tag("tent.jpg") %> <img id="tent">
             </div>
             <div class="products-ref"> 
-               <% @products.each do |product| %>
-                <p><%= link_to 'Show', product %>
-                  <%= link_to 'Edit', edit_product_path(product) %>
-                  <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </p>
-                <% end %>
+             <p><% @products.each do |product| %>
+              <%= link_to 'Show', product %>
+              <%= link_to 'Edit', edit_product_path(product) %>
+              <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <% end %>
+            </p>
             </div>
           <hr>
           <div class="show-index-price">
@@ -47,13 +47,12 @@
               <%= image_tag("hammock-1.jpeg") %> <img id="hammock">
             </div>
             <div class="products-ref">
-               <% @products.each do |product| %>
-                <p><!-- <a href="/products/show.html.erb">Show</a> -->
-                  <%= link_to 'Show', product %> 
-                  <%= link_to 'Edit', edit_product_path(product) %>
-                  <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </p>
+              <p><% @products.each do |product| %>
+                <%= link_to 'Show', product %> 
+                <%= link_to 'Edit', edit_product_path(product) %>
+                <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
                 <% end -%>
+              </p>
             </div>
           <hr>
           <div class="show-index-price">
