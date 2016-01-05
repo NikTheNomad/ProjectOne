@@ -1,6 +1,7 @@
 <div class="container" id="pagecontainer">
 <p id="notice"><%= notice %></p>
 <h2>Our Products</h2>
+<hr>
 
 <link rel="stylesheet" type="text/css" href="products.scss">
     <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,7 +16,7 @@
   
    <div class="container-fluid">
     <div class="row" id="productrow">
-      <div class="col-lg-4 col-md-4 col-xs-6">
+      <div class="col-lg-6 col-md-6 col-xs-6">
         <div class="product-container">
           <p>Outdoor Tents</p><br>
           <p>Find your best outdoor tents right here!</p>
@@ -38,7 +39,7 @@
         <%= link_to 'New Product', new_product_path %>
       </div>
   
-      <div class="col-lg-4 col-md-4 col-xs-6">
+      <div class="col-lg-6 col-md-6 col-xs-6">
         <div class="product-container">
           <p>Hammocks</p><br>
           <p>The best outdoor hammocks</p>
@@ -62,10 +63,11 @@
         <%= link_to 'New Product', new_product_path %>
       </div>
     </div> <!-- <end row> -->
-  </div> <!-- - end container> -->
+  </div> <!-- - end container-fluid> -->
 
 
 <br>
-<!-- </div> --> <!-- <-end container -->
+
 </body>
 
+</div> <!-- -end pagecontainer> -->

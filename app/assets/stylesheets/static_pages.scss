@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
+* {
+  margin: 0;
+}
+
 body {
   position: relative !important;
   max-width: 100%;
@@ -24,27 +28,57 @@ nav {
   text-align: center;
   position: fixed;
   -webkit-transform: translateZ(0);
-  z-index: 10000;
-  position: absolute;
+  z-index: 1;
 }
+
+h2 {
+  font-size: 2em;
+  font-family: 'Istok Web', sans-serif !important;
+  text-align: center;
+  color: #333;
+  letter-spacing: 1px;
+  font-family: 'Amiri', serif; 
+  text-transform: uppercase;
+}
+
+h3 {
+font-size: 1em;
+font-family: 'Istok Web', sans-serif;
+text-align: center;
+color: #333;
+letter-spacing: 0.9px;
+text-transform: uppercase;
+}
+
+/*hr {
+
+}
+
+p*/
 
 #contact ul {
   display: inline;
 }
 
 /*==========Images==============*/
-#cave {
+/*#cave {
   max-width: 100%;
 }
 
-/*#gear {
+#gear {
   max-width: 100%;
   border: 1px solid black;
-}*/
+}
 
-/*#case {
+#case {
   max-width: 100%;
 }*/
+
+img {
+  max-width: 100%;
+
+}
+
 
 footer {
   clear: both;
@@ -53,6 +87,6 @@ footer {
   padding: 2px 20px;
   position: absolute;
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
