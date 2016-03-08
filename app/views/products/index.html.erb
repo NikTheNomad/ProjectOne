@@ -1,67 +1,32 @@
-<div class="container" id="pagecontainer">
-<p id="notice"><%= notice %></p>
-<h2>Our Products</h2>
-<hr>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Color</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
 
-<link rel="stylesheet" type="text/css" href="products.scss">
-    <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => true %>
-
-
-<body>
-<!-- <div class="container-fluid" id="productheader">
-  <div class="container-header">
-    <h1>All our products</h1>
-  </div> -->
-  
-  
-   <div class="container-fluid">
-    <div class="row" id="productrow">
-      <div class="col-lg-6 col-md-6 col-xs-6">
-        <div class="product-container">
-          <p>Outdoor Tents</p><br>
-          <p>Find your best outdoor tents right here!</p>
-            <div class="image">
-              <%= image_tag("tent.jpg") %> <img id="tent">
-            </div>
-            <div class="products-ref"> 
-
-            </div>
-          <hr>
-          <div class="show-index-price">
-          <p> $98.00 and up</p>
-          </div>
-        </div>
-        <%= link_to 'New Product', new_product_path %>
-      </div>
-  
-      <div class="col-lg-6 col-md-6 col-xs-6">
-        <div class="product-container">
-          <p>Hammocks</p><br>
-          <p>The best outdoor hammocks</p>
-            <div class="image">
-              <%= image_tag("hammock-1.jpeg") %> <img id="hammock">
-            </div>
-            <div class="products-ref">
-              <p><% @products.each do |product| %>
-                <%= link_to 'Show', product %> 
-                <%= link_to 'Edit', edit_product_path(product) %>
-                <%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-                <% end -%>
-              </p>
-            </div>
-          <hr>
-          <div class="show-index-price">
-            <p> From $50.00 and up</p>
-          </div>
-        </div>
-        <%= link_to 'New Product', new_product_path %>
-      </div>
-    </div> <!-- <end row> -->
-  </div> <!-- - end container-fluid> -->
-
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= image_tag (product.image_url) %></td>
+        <td><%= product.color %></td>
+        <!-- <br> -->
+        <tr style="border : thin solid">
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Cancel', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+       </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <br>
 
-</body>
-
-</div> <!-- -end pagecontainer> -->
+<button><%= link_to 'New Product', new_product_path %></button>
